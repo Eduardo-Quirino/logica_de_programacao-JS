@@ -8,9 +8,11 @@
 
 3- Pedir para o usuário digitar dois números e mostrar a soma.
 
+4-Pedir para o usuário digitar dois números e mostrar a média.
+
 ## Desafios :
 
-> 1-
+> 3 -
 >
 > //pedir para O usuario digitar um numero
 > //converter em numero inteiro
@@ -21,3 +23,18 @@
 >  ..."
 > //mostrar a divisão concatenando com O texto "a divisão é: ..."
 > //mostrar a soma concatenando com o texto "a soma é: ..."
+
+> 4 -
+>
+> //pedir para O usuario digitar um numero
+> //converter em numero inteiro
+> //pedir para o usuario digitar outro numero
+> //converter em numero inteiro
+>  I *
+> mostrar num alert o seguinte texto
+> O resto da divisão de (n1) por (n2) é: (resultado);
+> */
+> /*
+> mostrar num alert o seguinte texto
+> O numero (n1) elevado a (n2) é: (resultado);
+> */
