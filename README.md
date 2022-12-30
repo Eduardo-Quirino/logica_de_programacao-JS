@@ -10,6 +10,8 @@
 
 4-Pedir para o usuário digitar dois números e mostrar a média.
 
+5-Pedir para o usuário digitar dois números e mostrar um boolean indicando se a média for maior que 5
+
 ## Desafios :
 
 > 3 -
@@ -38,3 +40,4 @@
 > mostrar num alert o seguinte texto
 > O numero (n1) elevado a (n2) é: (resultado);
 > */
+
