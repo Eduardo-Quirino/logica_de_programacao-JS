@@ -64,6 +64,8 @@ var media = (n1 + n2) / 2;
 alert(media > 5);
 ```
 
+6-Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5.
+
 
 
 ## Desafios :
