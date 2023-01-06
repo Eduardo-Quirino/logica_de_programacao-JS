@@ -11,11 +11,16 @@ Operadores de comparação
 */
 
 //Pedir para o usuário digitar dois números e mostrar um boolean indicando se a média for maior que 5
-var n1 = prompt("Digite o primeiro número");//1° forma
+
+alert('Calculo de média maior que 5');
+
+let n1 = prompt('Digite o número da primeira nota:');
 n1 = parseFloat(n1);
 
-var n2 = parseFloat(prompt("Digite o segungo número"));//2° forma
+let n2 = prompt('Digite o número da segunda nota:');
+n2 = parseFloat(n2);
 
-var media = (n1 + n2) / 2;
+let media = (n1 + n2) / 2;
 
-alert(media > 5)
+alert(media > 5);
+
