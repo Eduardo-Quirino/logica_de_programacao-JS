@@ -16,3 +16,8 @@ if (media > 5) {
 } else {
     alert("Reprovado" + " sua média foi: " + media)
 };
+
+
+
+
+

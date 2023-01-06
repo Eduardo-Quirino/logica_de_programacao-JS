@@ -66,7 +66,26 @@ alert(media > 5);
 
 6-Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5.
 
+```javascript
+alert('Calcule sua média de notas');
 
+var n1 = prompt("Digite o  primeira nota:");//1° forma
+n1 = parseFloat(n1);
+
+var n2 = parseFloat(prompt("Digite o segunda nota:"));//2° forma
+
+var media = (n1 + n2) / 2;
+
+alert(media > 5);
+
+if (media > 5) {
+    alert("Aprovado" + " sua média foi: " + media)
+} else {
+    alert("Reprovado" + " sua média foi: " + media)
+};
+```
+
+7-
 
 ## Desafios :
 
@@ -110,19 +129,6 @@ alert(media > 5);
 
 > 4 -
 >
-> //pedir para O usuario digitar um numero
-> //converter em numero inteiro
-> //pedir para o usuario digitar outro numero
-> //converter em numero inteiro
-> I *
-> mostrar num alert o seguinte texto
-> O resto da divisão de (n1) por (n2) é: (resultado);
-> */
-> /*
-> mostrar num alert o seguinte texto
-> O numero (n1) elevado a (n2) é: (resultado);
-> */
->
 > ```javascript
 > //pedir para O usuario digitar um numero
 > var n1 = prompt("Digite o primeiro número");
@@ -143,5 +149,17 @@ alert(media > 5);
 > 
 > ```
 >
-> 
+> 5-
+>
+> //fazer jogador 1 digitar um numero
+>
+> //fazer jogador 2 digitar outro numero
+>
+> //se forem iguais, ostrar mensagem 'EMPATE'
+>
+> //sortear um número entre o e 1
+>
+> //se o número sorteado for 0, ganha quem escolher o número MENOR
+>
+> //se o número sorteado for 1, ganha quem escolher o número MAIOR 
 
