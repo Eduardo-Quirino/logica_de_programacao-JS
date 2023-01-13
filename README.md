@@ -4,7 +4,7 @@
 
 ## Problemas:
 
-2- Pergunta o nome do usuário e  mostrar mensagem de boas-vindas.
+**2- Pergunta o nome do usuário e  mostrar mensagem de boas-vindas.**
 
 ```javascript
 //Pedir o nome so usuário e imprimir na tela
@@ -15,7 +15,7 @@ alert("Bem vindo!" + " " + nome);
 
 ```
 
-3- Pedir para o usuário digitar dois números e mostrar a soma.
+**3- Pedir para o usuário digitar dois números e mostrar a soma.**
 
 ```javascript
 //Pedir para o usuário digitar dois números e mostrar a soma.
@@ -32,7 +32,7 @@ n2 = parseFloat(n2);//convert
 alert(n1 + n2);
 ```
 
-4-Pedir para o usuário digitar dois números e mostrar a média.
+**4-Pedir para o usuário digitar dois números e mostrar a média.**
 
 ```javascript
 //Pedir para o usuário digitar dois números e mostrar a média
@@ -50,7 +50,7 @@ alert("A média e: " + media);
 
 
 
-5-Pedir para o usuário digitar dois números e mostrar um boolean indicando se a média for maior que 5
+**5-Pedir para o usuário digitar dois números e mostrar um boolean indicando se a média for maior que 5**
 
 ```javascript
 //Pedir para o usuário digitar dois números e mostrar um boolean indicando se a média for maior que 5
@@ -64,7 +64,7 @@ var media = (n1 + n2) / 2;
 alert(media > 5);
 ```
 
-6-Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5.
+**6-Pedir para o usuário digitar dois números e mostrar uma mensagem informando se foi aprovado ou não. A nota de corte é 5.**
 
 ```javascript
 alert('Calcule sua média de notas');
@@ -85,13 +85,32 @@ if (media > 5) {
 };
 ```
 
-7-
+**7- Pedir para o usuário digitar dois números e mostrar uma massagem informando se foi aprovado ou não. A nota de corte é 5. Contudo, se qualquer uma das notas for zero, reprovado automaticamente.** 
+
+<img src="./../../../AppData/Roaming/Typora/typora-user-images/image-20230113120817525.png" alt="image-20230113120817525" style="zoom: 67%;" />
+
+```javascript
+//Pedir para o usuário digitar dois números
+alert('Informativo de aprovação');
+var nota1 = prompt('Digite a primeira nota: ');
+nota1 = parseInt(nota1);
+
+var nota2 = prompt('Digite a segunda nota: ');
+nota2 = parseInt(nota2);
+
+var media = (nota1 + nota2) / 2;
+
+//mostrar uma massagem informando se foi aprovado ou não.A nota de corte é 5
+if (media >= 5 && nota1 > 0 && nota2 > 0) {
+    alert('Parabens APROVADO' + " " + media);
+} else {
+    // Contudo, se qualquer uma das notas for zero, reprovado automaticamente.
+    alert('Você esta REPROVADO!' + " " + media);
+```
 
 
 
-# 
-
-## 📘Desafios :
+## # 📘Desafios :
 
 > 3 -
 >
@@ -166,4 +185,56 @@ if (media > 5) {
 > //se o número sorteado for 0, ganha quem escolher o número MENOR
 >
 > //se o número sorteado for 1, ganha quem escolher o número MAIOR 
+>
+> ```javascript
+> alert('Digite números entre 0 e 1')
+> 
+> //fazer jogador 1 digitar um numero
+> var nJogador1 = prompt('número do jogador 1');
+> nJogador1 = parseInt(nJogador1);
+> //fazer jogador 2 digitar outro numero
+> var nJogador2 = prompt('número do gogador 2');
+> nJogador2 = parseInt(nJogador2);
+> //se forem iguais, mostrar mensagem 'EMPATE'
+> if (nJogador1 === nJogador2) {
+>  alert('Vocês empataram !');
+> } else {
+>  //sortear um número entre o e 1
+>  var nSorteado = parseInt(Math.random() * 2);
+>  //se o número sorteado for 0, ganha quem escolher o número MENOR
+>  if (nSorteado === 0) {
+>      if (nJogador1 < nJogador2) {
+>          alert('Ganhou jogador 1');
+>      } else {
+>          alert('Ganhou jogador 2');
+>      }
+>  } else {
+>      if (nJogador1 > nJogador2) {
+>          //se o número sorteado for 1, ganha quem escolher o número MAIOR 
+>          if (nJogador1 > nJogador2) {
+>              alert('Ganhou jogador 1');
+>          } else {
+>              alert('Ganhou jogador 2');
+>          }
+>      }
+> 
+>  }
+> 
+> }	
+> ```
+>
+> 
+>
+> **Exercício Proposto - 4**
+>
+> ```javascript
+> //Pedir para o usuário digitar dois números e mostrar uma massagem informando se foi aprovado ou não. A nota de corte é 5. Contudo, se qualquer uma das notas for zero, reprovado automaticamente.Usando OU <||>
+> 
+> ```
+>
+> 
+
+
+
+
 
