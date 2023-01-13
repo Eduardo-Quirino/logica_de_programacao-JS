@@ -17,7 +17,7 @@ if (media > 5) {
     alert("Reprovado" + " sua média foi: " + media)
 };
 
-
+''
 
 
 

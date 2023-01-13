@@ -87,7 +87,11 @@ if (media > 5) {
 
 7-
 
-## Desafios :
+
+
+# 
+
+## 📘Desafios :
 
 > 3 -
 >
@@ -149,13 +153,13 @@ if (media > 5) {
 > 
 > ```
 >
-> 5-
+> **Exercício Proposto - 3**
 >
 > //fazer jogador 1 digitar um numero
 >
 > //fazer jogador 2 digitar outro numero
 >
-> //se forem iguais, ostrar mensagem 'EMPATE'
+> //se forem iguais, mostrar mensagem 'EMPATE'
 >
 > //sortear um número entre o e 1
 >
