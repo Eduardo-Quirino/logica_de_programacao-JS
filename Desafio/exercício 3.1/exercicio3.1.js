@@ -1,20 +1,43 @@
-//pedir para O usuario digitar um numero
-var n1 = prompt("Digite o primeiro número");
+/*
+fazer jogador 1 digitar um numero
 
-//converter em numero inteiro
-n1 = parseInt(n1);
+fazer jogador 2 digitar outro numero
 
-//pedir para O usuario digitar outro numero
-var n2 = prompt("Digite o segundo número");
+se forem iguais, mostrar mensagem 'EMPATE'
 
-//converter em numero inteiro
-n2 = parseInt(n2);
+sortear um número entre o e 1
 
-//mostrar a subtração concatenando com o texto "a subtração é: ..."
-alert("a subtração é: " + (n1 - n2));
-//mostrar a multiplicação concatenando com O texto "a multiplicação é:..."
-alert("a multiplicação é: " + (n1 * n2));
-//mostrar a divisão concatenando com O texto "a divisão é: ..."
-alert("a divisão é: " + (n1 / n2));
-//mostrar a soma concatenando com o texto "a soma é: ..."
-alert("a soma é: " + (n1 + n2));
+se o número sorteado for 0, ganha quem escolher o número MENOR
+
+se o número sorteado for 1, ganha quem escolher o número MAIOR 
+*/
+
+
+
+alert('Digite números entre 0 e 1')
+
+//fazer jogador 1 digitar um numero
+var nJogador1 = prompt('número do jogador 1');
+nJogador1 = parseInt(nJogador1);
+//fazer jogador 2 digitar outro numero
+var nJogador2 = prompt('número do gogador 2');
+nJogador2 = parseInt(nJogador2);
+
+//se forem iguais, mostrar mensagem 'EMPATE'
+
+
+//sortear um número entre o e 1
+var nSorteado = parseInt(Math.random() * 2);
+alert("nSorteado: " + nSorteado);
+
+//se o número sorteado for 0, ganha quem escolher o número MENOR
+//se o número sorteado for 1, ganha quem escolher o número MAIOR 
+if ((nSorteado === 0 && nJogador1 < nJogador2) || (nSorteado === 1 && nJogador1 > nJogador2)) {
+    alert('Ganhou o jogador 1');
+} else {
+    alert('Ganhou jogador 2');
+}
+
+
+
+
