@@ -14,4 +14,3 @@ while (indice <= 1000) {
 
 }
 document.write('saiu do loop');
-

@@ -87,8 +87,6 @@ if (media > 5) {
 
 **7- Pedir para o usuário digitar dois números e mostrar uma massagem informando se foi aprovado ou não. A nota de corte é 5. Contudo, se qualquer uma das notas for zero, reprovado automaticamente.** 
 
-<img src="./../../../AppData/Roaming/Typora/typora-user-images/image-20230113120817525.png" alt="image-20230113120817525" style="zoom: 67%;" />
-
 ```javascript
 //Pedir para o usuário digitar dois números
 alert('Informativo de aprovação');
@@ -158,6 +156,8 @@ document.write('saiu do loop');
 ```
 
 OBS : EVITAR USAR < document.write > NO DIA  A DIA
+
+
 
 ---
 
