@@ -157,7 +157,7 @@ document.write('saiu do loop');
 
 OBS : EVITAR USAR < document.write > NO DIA  A DIA
 
-
+**10-**
 
 
 
@@ -400,13 +400,17 @@ OBS : EVITAR USAR < document.write > NO DIA  A DIA
 > let ano = 1004;
 > 
 > while (ano <= 2023) {
->   document.write(ano + '<br>');
->   ano = ano + 4;
+>   if (!(ano % 100 === 0) || ano % 400 === 0) {
+>     document.write(ano + "<br>");
+>   } else {
+>     document.write(ano + " não é bissexto <br>");
+>   }
+>   //ano = ano + 4
+>   ano += 4;
 > }
-> 
 > ```
->
-> 
+
+
 
 
 
