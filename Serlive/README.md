@@ -159,7 +159,38 @@ OBS : EVITAR USAR < document.write > NO DIA  A DIA
 
 
 
+**10-Funções - Pedir para o usuário digitar um número e mostrar a tabuada desse número de 1 a 1000. Deve ter a possibilidade do usuário digitar outro número e também de limpar a tabuada gerada previamente.**
 
+```javascript
+let output = document.querySelector("#output");
+let mensagem = "";
+//criar tabuada
+function mostrarTabuada() {
+  //perguntar o número para usuário e converter o número
+  let n = parseFloat(prompt("Digite o número"));
+    limparTabuada();
+    
+  //criar variavel para indice
+    let i = 1;
+    
+  //enqunto indice <= 100
+  while (i <= 1000) {
+    //concatena com mensagem
+    mensagem += n + " x " + i + " = " + n * i + "<br>";
+    i++;
+  }
+  //mostra mensagem no output
+  output.innerHTML = mensagem;
+}
+
+// limpar tabuada
+function limparTabuada() {
+  mensagem = "";
+  output.innerHTML = mensagem;
+}
+```
+
+> Funções void Funções que não retornam nenhum valor. São úteis quando queremos reaproveitar código
 
 
 
@@ -260,20 +291,20 @@ OBS : EVITAR USAR < document.write > NO DIA  A DIA
 > var nSorteado = parseInt(Math.random() * 2);
 > //se o número sorteado for 0, ganha quem escolher o número MENOR
 > if (nSorteado === 0) {
->   if (nJogador1 < nJogador2) {
->       alert('Ganhou jogador 1');
->   } else {
->       alert('Ganhou jogador 2');
->   }
+> if (nJogador1 < nJogador2) {
+>    alert('Ganhou jogador 1');
 > } else {
->   if (nJogador1 > nJogador2) {
->       //se o número sorteado for 1, ganha quem escolher o número MAIOR 
->       if (nJogador1 > nJogador2) {
->           alert('Ganhou jogador 1');
->       } else {
->           alert('Ganhou jogador 2');
->       }
->   }
+>    alert('Ganhou jogador 2');
+> }
+> } else {
+> if (nJogador1 > nJogador2) {
+>    //se o número sorteado for 1, ganha quem escolher o número MAIOR 
+>    if (nJogador1 > nJogador2) {
+>        alert('Ganhou jogador 1');
+>    } else {
+>        alert('Ganhou jogador 2');
+>    }
+> }
 > 
 > }
 > 
@@ -349,6 +380,70 @@ OBS : EVITAR USAR < document.write > NO DIA  A DIA
 >  alert('Você foi APROVADO' + " " + media);
 > }
 > ```
+>
+> 
+>
+> **Exercício Proposto - 7**
+>
+> ```javascript
+> //Pedir para 0 usuário digitar um número e depois  a tabuada desse número de 0 a 1000.
+> 
+> alert("Tabuada de Multiplicação");
+> let num = prompt("Digite o multiplicador: ");
+> num = parseFloat(num);
+> 
+> let indice = 0;
+> 
+> //repita até que indice seja <=1000
+> while (indice <= 1000) {
+>   document.write(num + " x " + indice + " = " + num * indice + "<br>");
+> 
+>   if (indice % 10 === 0 && indice > 0) {
+>     document.write("<hr>");
+>   }
+>   indice = indice + 1;
+> }
+> document.write("saiu do loop");
+> 
+> ```
+>
+> 
+>
+> **Exercício Proposto - 7.1**
+>
+> ```javascript
+> /*
+> Para este exercício, mostre na tela todos os anos a partir de 1004 até o ano 2023, pulando de quatro em quatro anos.
+> 
+> Por exemplo:
+> 
+>     1004
+> 
+>     1008
+> 
+>     1012
+> 
+> E assim por diante.
+> 
+> É como mostrar os anos bissextos, mas sem as regras para descobrir se um ano é bissexto ou não. (vamos imaginar que se o ano é múltiplo de quatro, ele é bissexto).
+> */
+> 
+> let ano = 1004;
+> 
+> while (ano <= 2023) {
+>   if (!(ano % 100 === 0) || ano % 400 === 0) {
+>     document.write(ano + "<br>");
+>   } else {
+>     document.write(ano + " não é bissexto <br>");
+>   }
+>   //ano = ano + 4
+>   ano += 4;
+> }
+> ```
+
+
+
+
 
 
 
